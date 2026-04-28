@@ -76,6 +76,13 @@ npm run build            # Production build
 npm run process-content  # Re-process transcripts → markdown
 ```
 
+## Planned Next Features (from parallel research — all 3 agents flagged these)
+- **Search** — Add Pagefind (`npm install -D pagefind`, run after `next build`, use built-in UI). All research agents flagged search as the highest-impact missing feature. Command: `next build && npx pagefind --site .next/server/app`
+- **Transcript editorial pass** — Raw transcripts have student dialogue, crosstalk, mic issues ("está me ouvindo baixo?"). Strip filler, add section headers, add 3-5 line summary at top of each lesson. Highest-leverage content improvement.
+- **Psicologia Esotérica split** — 92 lessons in one section is over the recommended 25-lesson limit. Consider splitting into: Ego & Falsa Personalidade / Trabalho com a Sombra / Integração / Transformação Interior.
+- **Body font size** — Research recommends 18px for transcripts. Currently 16px (`text-base`). Update `lesson-content` in globals.css.
+- **Custom domain** — Point victor's domain to Vercel via dashboard.
+
 ## Mistakes List
 <!-- Every mistake that happened during build goes here. Same mistake twice = flag it. -->
 - (none yet)
